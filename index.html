@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="./styles.js" defer></script>
+</head>
+<body>
+    <div class="calculator-grid">
+
+        <div class="entry">
+            <form name="calc">
+                <input class="entry" type="text" id="entry" value="0" readonly>
+            </form>
+        </div>
+
+        <button id="clearBut" class="button" onclick="clearButPress()">AC</button>
+        <input type="button" name="opp" value="+/-" id="opp" onclick="opposite()"/>
+
+        <button id="mathBut" class="button" onclick="mathButPress('^')">^</button>
+        <button id="mathBut" class="button" onclick="mathButPress('÷')">÷</button>
+        <button id="numBut" class="button" onclick="numButPress(1)">1</button>
+        <button id="numBut" class="button" onclick="numButPress(2)">2</button>
+        <button id="numBut" class="button" onclick="numButPress(3)">3</button>
+        <button id="mathBut" class="button" onclick="mathButPress('*')">*</button>
+        <button id="numBut" class="button" onclick="numButPress(4)">4</button>
+        <button id="numBut" class="button" onclick="numButPress(5)">5</button>
+        <button id="numBut" class="button" onclick="numButPress(6)">6</button>
+        <button id="mathBut" class="button" onclick="mathButPress('+')">+</button>
+        <button id="numBut" class="button" onclick="numButPress(7)">7</button>
+        <button id="numBut" class="button" onclick="numButPress(8)">8</button>
+        <button id="numBut" class="button" onclick="numButPress(9)">9</button>
+        <button id="mathBut" class="button" onclick="mathButPress('-')">-</button>
+        <button id="numBut" class="button" onclick="numButPress('.')">.</button>
+        <button id="numBut" class="button" onclick="numButPress(0)">0</button>
+        <button id="mathBut" class="button" onclick="mathButPress('√')">√</button>
+        <button id="equalBut" class="button" onclick="equalButPress()">=</button>
+
+    </div> 
+</body>
+</html>
